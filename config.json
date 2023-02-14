@@ -1,0 +1,220 @@
+{
+    "smtpConfig": {
+        "isEnabled": false,
+        "server": "smtp.gmail.com",
+        "port": 465,
+        "sender": "nojusskirkevicius@gmail.com",
+        "pass": "jcsbadcujqlqblum",
+        "subject": "AT command tester",
+        "message": "Script has finished running.",
+        "receiver": "nojusskirkevicius@gmail.com"
+    },
+    "ftpConfig": {
+        "isEnabled": true,
+        "server": "84.15.249.182",
+        "port": 22,
+        "user": "akademija",
+        "pass": "akademija",
+        "dest": "AT_TESTER_LOG"
+    },
+    "devices":{
+        "RUTX11": {
+            "settings" :{
+                "conn": "ssh",
+                "port": 22,
+                "user": "root",
+                "pasw": "Admin123"
+            },
+            "commands": {
+                
+                "ATI": {
+                    "flags":"",
+                    "rsp": "OK"
+                },
+                "AetI": {
+                    "flags":"",
+                    "rsp": "OK"
+                },
+                "AT+GMI": {
+                    "flags":"",
+                    "rsp": "OK"
+                },
+                "AT+GMM": {
+                    "flags":"",
+                    "rsp": "OK"
+                },
+                "AT+GMR": {
+                    "flags":"",
+                    "rsp": "OK"
+                },
+                "AT+CGMI": {
+                    "flags":"",
+                    "rsp": "OK"
+                },
+                "AT+CGMM": {
+                    "flags":"",
+                    "rsp": "OK"
+                },
+                "AT+CGMR": {
+                    "flags":"",
+                    "rsp": "OK"
+                },
+                "AT+GSN": {
+                    "flags":"",
+                    "rsp": "OK"
+                },
+                "AT+CGSN": {
+                    "flags":"",
+                    "rsp": "OK"
+                },
+                "AT&F": {
+                    "flags":"",
+                    "rsp": "OK"
+                },
+                "AT&V": {
+                    "flags":"",
+                    "rsp": "OK"
+                },
+                "AT&W": {
+                    "flags":"",
+                    "rsp": "OK"
+                },
+                "ATZ": {
+                    "flags":"",
+                    "rsp": "OK"
+                },
+                "ATQ": {
+                    "flags":"",
+                    "rsp": "OK"
+                },
+                "ATV": {
+                    "flags":["1"],
+                    "rsp": "OK"
+                },
+                "ATE1": {
+                    "flags":"",
+                    "rsp": "OK"
+                },
+                "A/": {
+                    "flags":"",
+                    "rsp": "OK"
+                },
+                "ATS3": {
+                    "flags":["=13"],
+                    "rsp": "OK"
+                },
+                "ATS4": {
+                    "flags":["=10"],
+                    "rsp": "OK"
+                },
+                "ATS5": {
+                    "flags":["=8"],
+                    "rsp": "OK"
+                },
+                "AT+CMGF": {
+                    "flags":["=1"],
+                    "rsp": "OK"
+                },
+                "AT+CSCS": {
+                    "flags":["=\"GSM\""],
+                    "rsp": "OK"
+                },
+                "AT+CMGS": {
+                    "flags":["=\"+37060592008\"", "Test Message"],
+                    "rsp": "OK"
+                }
+            }
+        },
+        "TRM240": {
+            "settings": {
+                "conn": "serial",
+                "baudrate": 115200,
+                "bytesize": 8,
+                "timeout": 0.225,
+                "stopbits": 1
+            },
+            "commands": {
+                "ATI": {
+                    "flags":"",
+                    "rsp": "OK"
+                },
+                "AT+GMI": {
+                    "flags":"",
+                    "rsp": "OK"
+                },
+                "AT+GMM": {
+                    "flags":"",
+                    "rsp": "OK"
+                },
+                "AT+GMR": {
+                    "flags":"",
+                    "rsp": "OK"
+                },
+                "AT+CGMI": {
+                    "flags":"",
+                    "rsp": "OK"
+                },
+                "AT+CGMM": {
+                    "flags":"",
+                    "rsp": "OK"
+                },
+                "AT+CGMR": {
+                    "flags":"",
+                    "rsp": "OK"
+                },
+                "AT+GSN": {
+                    "flags":"",
+                    "rsp": "OK"
+                },
+                "AT+CGSN": {
+                    "flags":"",
+                    "rsp": "OK"
+                },
+                "AT&F": {
+                    "flags":"",
+                    "rsp": "OK"
+                },
+                "AT&V": {
+                    "flags":"",
+                    "rsp": "OK"
+                },
+                "AT&W": {
+                    "flags":"",
+                    "rsp": "OK"
+                },
+                "ATZ": {
+                    "flags":"",
+                    "rsp": "OK"
+                },
+                "ATQ": {
+                    "flags":"",
+                    "rsp": "OK"
+                },
+                "ATV": {
+                    "flags":["1"],
+                    "rsp": "OK"
+                },
+                "ATE1": {
+                    "flags":"",
+                    "rsp": "OK"
+                },
+                "A/": {
+                    "flags":"",
+                    "rsp": "OK"
+                },
+                "ATS3": {
+                    "flags":["=13"],
+                    "rsp": "OK"
+                },
+                "ATS4": {
+                    "flags":["=10"],
+                    "rsp": "OK"
+                },
+                "ATS5": {
+                    "flags":["=8"],
+                    "rsp": "OK"
+                }
+            }
+        }
+    }
+}
